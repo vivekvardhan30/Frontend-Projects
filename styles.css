@@ -1,0 +1,350 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #e6f7ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 11px 8px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 50px 30px 19px;
+}
+
+.calculator,
+.result {
+    padding: 30px;
+    flex: 1;
+    padding-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .calculator,
+    .result {
+        width: 100%;
+        padding: 15px;
+    }
+    .container{
+        width: 100%;
+    }
+    .amt1,
+    .amt2 {
+        font-size: 24px;
+    }
+
+    .calculate-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+    body{
+        background-color: #f6f8fa;
+        width: 100%;
+    }
+    .head{
+        width: 100%;
+    }
+    .calculator,
+    .result {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .amt1,
+    .amt2 {
+        font-size: 20px;
+    }
+
+    .calculate-button {
+        width: 100%;
+    }
+
+    #resultAfter,#resultBefore {
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+    }
+
+    .calculator12 {
+        background-color: rgb(14, 36, 49);
+        font-size: 12px;
+        border-radius: 8px;
+        width: 50%;
+        padding-left: 21px;
+        padding-right: 0px;
+        margin-right: 0px;
+        text-align: left;
+        margin-top: 15px;
+        border-top: 4px solid rgb(207, 220, 97);
+        height: 18vh;
+        box-shadow: 2px 2px 5px rgb(58 62 64);
+    }
+    #resultAfter{
+        width: 100%;
+    }
+
+    .calculate-button{
+        margin-bottom: 15px;
+    }
+}
+
+.calculator {
+    background-color: #f6f8fa;
+    border-radius: 19px 0px 0px 19px;
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 16px;
+    color: rgb(55, 69, 78);
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clear-all {
+    display: flex;
+    /*margin-bottom: 20px;*/
+    color: rgb(167, 171, 170);
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.clear-all:hover {
+    text-decoration: underline;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 2px;
+    outline: none;
+}
+
+.input-group span {
+    margin-left: 3px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 5.12vh;
+    width: 10%;
+    display: flex;
+    color: rgb(128, 152, 157);
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(226, 245, 252);
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+
+.input-group1 {
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.calculate-button {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(32, 49, 7);
+    background-color: rgb(217, 220, 45);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.calculate-button:hover {
+    background-color: rgb(236, 237, 149);
+}
+
+.calculate-button i {
+    color: rgb(32, 49, 7);
+    margin-right: 5px;
+}
+
+.result {
+    background-color: #001f3f;
+    color: #fff;
+    /*text-align: center;*/
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    border-radius: 0px 27px 27px 56px;
+}
+
+#resultAfter p {
+    margin: 5px 0;
+    text-align: justify;
+    font-size: 12;
+    color: rgb(130, 158, 178);
+}
+
+#resultAfter {
+    padding: 15px;
+    padding-left: 31px;
+}
+
+.container1 {
+    display: flex;
+    gap: 20px;
+}
+
+.input-group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.input-field {
+    width: 119px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.unit {
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(226, 245, 252);
+    color: rgb(128, 152, 157);
+    border-left: 1px solid #ccc;
+}
+
+.mortgage-type1 {
+    margin-bottom: 34px;
+}
+
+.mortgage-type {
+    border: 1px solid #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 94%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.mortgage-type input[type="radio"] {
+    margin-right: 10px;
+}
+
+.mortgage-type input[type="radio"]+label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.mortgage-type input[type="radio"]:checked+label {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.mortgage-type:hover {
+    background-color: rgb(250, 250, 224);
+}
+
+.calculator12 {
+    background-color: rgb(14, 36, 49);
+    font-size: 12px;
+    border-radius: 8px;
+    width: 90%;
+    padding-left: 21px;
+    padding-right: 0px;
+    margin-right: 0px;
+    text-align: left;
+    margin-top: 30px;
+    border-top: 4px solid rgb(207, 220, 97);
+    height: 27vh;
+    box-shadow: 2px 2px 5px rgb(58 62 64);
+}
+
+.line {
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+    border-top: 3px solid rgb(32, 54, 67);
+}
+
+.amt1 {
+    font-size: 30px;
+    color: rgb(211, 215, 40);
+    font-weight: bold;
+}
+
+.amt2 {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.result {
+    display: none;
+}
+
+.result.visible {
+    display: block;
+}
+
+.visible {
+    text-align: center;
+    width: 50%;
+    padding-top: 80px;
+    background-color: #001f3f;
+    color: rgb(128, 152, 157);
+}
